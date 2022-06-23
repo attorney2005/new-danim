@@ -1,0 +1,74 @@
+@import '../../utils/global';
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.bestsellers {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 130px 0 0 0;
+}
+
+.bestsellers__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bestsellers__header-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  font-family: $brand-common-font;
+  color: $brand-black;
+}
+
+.bestsellers__header-link {
+  position: relative;
+  padding-left: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $brand-common-font;
+  color: $brand-black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 29px;
+    right: -4px;
+    width: 80px;
+    height: 2px;
+    background-color: $brand-black;
+  }
+}
+
+.bestsellers__cards {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto 0 auto;
+}
+
+.bestsellers__card {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bestsellers__card-name {
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $brand-common-font;
+  color: $brand-black;
+}
+
+.bestsellers__card-price {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $brand-common-font;
+  color: $brand-black;
+}

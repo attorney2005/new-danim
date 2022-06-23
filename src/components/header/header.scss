@@ -1,0 +1,51 @@
+@import '../../utils/global';
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.header {
+  padding: 0 20px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  @include reset-list;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 250px;
+}
+
+.header__menu-item {
+  padding: 25px 0;
+}
+
+.header__menu-item:not(:first-of-type) {
+  margin-left: 35px;
+}
+
+.header__menu-link {
+  font-family: $brand-common-font;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: $header-menu-link-color;
+}
+
+.header__logo-link {
+  margin: 0 auto;
+}
+
+.header__user {
+  @include reset-list;
+  display: flex;
+  justify-content: flex-end;
+  width: 250px;;
+}
+
+.header__user-item {
+  width: 40px;
+}

@@ -1,0 +1,138 @@
+@import '../../utils/global';
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.gallery {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 130px 0;
+}
+
+.gallery__filter-dropdown {
+  position: relative;
+  margin: auto 130px auto auto;
+  padding: 10px 10px 10px 10px;
+  width: 243px;
+  height: 50px;
+  border: 2px solid $brand-black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 20px;
+    width: 18px;
+    height: 10px;
+    background-image: url("assets/check.svg");
+  }
+}
+
+.gallery__filter-title {
+  margin: 0;
+  font-family: $brand-common-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $brand-black;
+}
+
+.gallery__filter-menu {
+  @include reset-list;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 243px;
+  background-color: $brand-gray-background;
+}
+
+.gallery__filter-link {
+  display: block;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  padding: 8px 10px;
+  color: $brand-black;
+  border: 1px solid $brand-black;
+}
+
+.gallery__filter-dropdown:hover .gallery__filter-menu {
+  display: block;
+}
+
+.gallery__cards {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery__card {
+  width: 243px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 66px;
+}
+
+.gallery__card-name {
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $brand-common-font;
+  color: $brand-black;
+}
+
+.gallery__card-price {
+  margin: 15px 0 83px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $brand-common-font;
+  color: $brand-black;
+}
+
+.gallery__buttons {
+  margin: auto;
+  display: table;
+}
+
+.gallery__buttons-text {
+  display: table;
+  margin: 0 auto 0;
+  font-family: $brand-common-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.gallery__buttons-scale {
+  position: relative;
+  margin: 10px auto 0;
+  width: 199px;
+  height: 2px;
+  background-color: $gallery-scale;
+}
+
+.gallery__buttons-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: $brand-black;
+}
+
+.gallery__button {
+  margin: 40px auto 0;
+  padding: 21px 56px 27px 56px;
+  width: 200px;
+  height: 64px;
+  font-family: $brand-common-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $brand-black;
+  color: $brand-white;
+  border: none;
+}

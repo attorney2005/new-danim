@@ -1,0 +1,16 @@
+@import '../../utils/global';
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+
+.black-button {
+  margin: 24px 0 0 0;
+  padding: 27px 45px;
+  font-family: $brand-common-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $brand-black;
+  color: $brand-white;
+  border: none;
+}
