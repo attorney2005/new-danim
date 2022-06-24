@@ -1,0 +1,63 @@
+@import '../../utils/global';
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+
+.filter {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.filter__block {
+  position: relative;
+  margin: auto 0 auto auto;
+  padding: 10px 10px 10px 10px;
+  width: 243px;
+  height: 50px;
+  border: 2px solid $brand-black;
+}
+
+.filter__title {
+  margin: 0;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $brand-black;
+}
+
+.filter__button {
+  display: block;
+  margin-left: auto;
+  width: 16px;
+  height: 8px;
+  color: $brand-black;
+}
+
+.filter__button:hover {
+  background-color: $brand-gray-background;
+}
+
+.filter__menu {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  width: 243px;
+  list-style: none;
+  background-color: $brand-gray-background;
+}
+
+.filter__link {
+  display: block;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  padding: 8px 10px;
+  color: $brand-black;
+  border: 1px solid $brand-black;
+}
+
+.filter__block:hover .filter__menu {
+  display: block;
+}

@@ -1,20 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom"
-import './catalog-gallary.scss';
+import './catalog-gallery.scss';
 
-function CatalogGallary(): JSX.Element {
+function CatalogGallery(): JSX.Element {
   return (
     <div className="gallery">
-      <div className="gallery__filter">
-        <div className="gallery__filter-dropdown">
-          <h1 className="gallery__filter-title">Filter by</h1>
-          <ul className="gallery__filter-menu">
-            <li className="gallery__filter-item"><a className="gallery__filter-link" href="#">1</a></li>
-            <li className="gallery__filter-item"><a className="gallery__filter-link" href="#">2</a></li>
-            <li className="gallery__filter-item"><a className="gallery__filter-link" href="#">3</a></li>
-          </ul>
-        </div>
-      </div>
+      {/*<div className="gallery__filter">*/}
+      {/*  <div className="gallery__filter-dropdown">*/}
+      {/*    <h1 className="gallery__filter-title">Filter by</h1>*/}
+      {/*    <ul className="gallery__filter-menu">*/}
+      {/*      <li className="gallery__filter-item"><a className="gallery__filter-link" href="#">1</a></li>*/}
+      {/*      <li className="gallery__filter-item"><a className="gallery__filter-link" href="#">2</a></li>*/}
+      {/*      <li className="gallery__filter-item"><a className="gallery__filter-link" href="#">3</a></li>*/}
+      {/*    </ul>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <ul className="gallery__cards">
         <li className="gallery__card">
           <img className="gallery__card-photo" src="./assets/jacket$40.jpg"
@@ -52,7 +52,7 @@ function CatalogGallary(): JSX.Element {
           <span className="gallery__card-price">$41</span>
         </li>
         <li className="gallery__card">
-          <img className="gallery__card-photo" src="./assets/jacket$1100.jpg"
+          <img className="gallery__card-photo" src="./assets/jacket$110.jpg"
                srcSet="./assets/jacket$110.jpg 1x, ./assets/jacket$110_2x.jpg 2x "
                width="243" height="270" alt="jacket for 110$"/>
           <span className="gallery__card-name">Jacket</span>
@@ -84,4 +84,4 @@ function CatalogGallary(): JSX.Element {
   )
 }
 
-export default CatalogGallary
+export default CatalogGallery
